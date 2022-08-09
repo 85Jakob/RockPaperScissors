@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>JS DEMO</title>
+
 </head>
 <body>
    <h1 class="title">ROCK PAPER SCISSORS</h1>
-   <h3 class="cScore"></h3>
-   <h2 class="compPick"></h2>
-   <h3 class="pScore"></h3>
-   <h2 class="playerPick"></h2>
+   <div class="display">
+        <div class="playerBox">
+            <h2 class="player">Player:</h2>
+            <h2 class="pScore"></h2>
+            <h2 class="playerPick"></h2>
+        </div>
+        <div class="compBox">
+            <h2 class="comp">Computer:</h2>
+            <h2 class="cScore"></h2>
+            <h2 class="compPick"></h2>
+        </div>
+    </div>
    
     <div class="buttons">
         <button id="rockBtn">ROCK</button>

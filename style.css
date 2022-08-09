@@ -1,0 +1,58 @@
+* {
+    border: 2px solid red;
+  }
+
+.body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+}
+.display{
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compBox{
+    width: 200px;
+    text-align: center;
+    display: block;
+}
+.comp{
+    display: inline;
+}
+.cScore {
+    display: inline;
+}
+.compPick {
+    text-align: center;
+    display: block;
+}
+
+.playerBox{
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: 20px;
+    border: 3px solid green;
+}
+.player{
+    display: inline;
+}
+.pScore {
+    display: inline;
+}
+.playerPick {
+    text-align: center;
+    display: block;
+}
+.buttons{
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
