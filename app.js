@@ -138,7 +138,7 @@ function handleClick(selection){
 */
 function reset(){
     buttonBox.style.display = 'flex';
-    resultsDisplay.innerHTML = 'ROCK PAPAR SCISSORS'
+    resultsDisplay.innerHTML = 'ROCK PAPER SCISSORS'
     playerScore = 0;
     computerScore = 0;  
     pScore.innerHTML = playerScore;
