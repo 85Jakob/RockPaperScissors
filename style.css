@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .compBox{
     width: 200px;
@@ -31,6 +32,7 @@
 .compPick {
     text-align: center;
     display: block;
+    height: 30px;
 }
 
 .playerBox{
@@ -49,10 +51,34 @@
 .playerPick {
     text-align: center;
     display: block;
+    height: 30px;
 }
 .buttons{
     border: 3px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+#rockBtn{
+    font-size: 25px;
+    
+}
+#paperBtn{
+    font-size: 25px;
+    
+}
+#scissorsBtn{
+    font-size: 25px;
+    
+}
+.reset{
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resetBtn{
+    font-size: 25px;
+    
 }

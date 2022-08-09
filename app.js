@@ -4,16 +4,21 @@ const displayCompPick = document.querySelector('.compPick');
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
+const resetBtn = document.getElementById('resetBtn');
 const cScore = document.querySelector('.cScore');
 const pScore = document.querySelector('.pScore');
+const buttonBox = document.querySelector('.buttons')
+const resetBox = document.querySelector('.reset')
 
 const maxScore = 5;
 let playerScore = 0;
 let computerScore = 0;
+resetBox.style.display = 'none';
 
 rock.addEventListener('click', ()=>handleClick('ROCK'));
 paper.addEventListener('click', ()=>handleClick('PAPER'));
 scissors.addEventListener('click', ()=>handleClick('SCISSORS'));
+resetBtn.addEventListener('click', ()=>reset());
 
 
 function playRound(playerSelection, computerSelection){
@@ -48,10 +53,14 @@ function playRound(playerSelection, computerSelection){
     cScore.innerHTML = computerScore;
 
     if (playerScore === 5){
-        resultsDisplay.innerHTML = 'CONGRATS YOU BEAT THE MACHINE, YOU WIN!!'
+        resultsDisplay.innerHTML = 'CONGRATS YOU BEAT THE MACHINE, YOU WIN!!';
+        buttonBox.style.display = 'none';
+        resetBox.style.display = 'flex';
     }
     else if(computerScore === 5){
-        resultsDisplay.innerHTML = 'YOU LOSE, THE MACHINE HAS WON!! :('
+        resultsDisplay.innerHTML = 'YOU LOSE, THE MACHINE HAS WON!! :(';
+        buttonBox.style.display = 'none';
+        resetBox.style.display = 'flex';
     }
 
 }
@@ -88,4 +97,16 @@ function handleClick(selection){
         
         playRound(playerSelection, computerSelection);
     }
+}
+
+function reset(){
+    buttonBox.style.display = 'flex';
+    resultsDisplay.innerHTML = 'ROCK PAPAR SCISSORS'
+    playerScore = 0;
+    computerScore = 0;  
+    pScore.innerHTML = playerScore;
+    cScore.innerHTML = computerScore;
+    resetBox.style.display = 'none';
+
+
 }
