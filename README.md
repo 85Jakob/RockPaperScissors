@@ -2,4 +2,4 @@
 
 Toy project of a rock paper scissors game
 
-view demo here: https://85jakob.github.io/RockPaperScissors/
+view project here: https://85jakob.github.io/RockPaperScissors/
