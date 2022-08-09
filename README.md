@@ -3,4 +3,4 @@
 Toy project of a rock paper scissors game.
 Created with JavaScript, HTML, and CSS.
 
-view project here: https://85jakob.github.io/RockPaperScissors/
+live: https://85jakob.github.io/RockPaperScissors/
