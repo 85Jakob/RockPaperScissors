@@ -20,7 +20,10 @@ paper.addEventListener('click', ()=>handleClick('PAPER'));
 scissors.addEventListener('click', ()=>handleClick('SCISSORS'));
 resetBtn.addEventListener('click', ()=>reset());
 
-
+/*
+* Determines who wins the round
+* Takes two strings the player selection and the random computer selection
+*/
 function playRound(playerSelection, computerSelection){
     if (playerSelection === computerSelection){
         resultsDisplay.innerHTML = 'TIE';
@@ -65,10 +68,19 @@ function playRound(playerSelection, computerSelection){
 
 }
 
+/*
+* Randomly picks a number 0-2
+* Returns the generated number
+*/
 function getRandomChoice() {
     return Math.floor(Math.random() * 3);
 }
 
+/*
+* Assigns 0-2 to a choice 
+* 0 = rock, 1 = paper, 2 = scissors
+* returns that choice as what the computer selected
+*/
 function compChoice(){
     let computerSelection;
     let choice = getRandomChoice();
@@ -85,6 +97,12 @@ function compChoice(){
     return computerSelection;
 }
 
+/*
+* Is called when player clicks on a button
+* assigns the selection to the players choice
+* if both the computer and players score is less than 5 
+* the game loop will be called
+*/
 function handleClick(selection){
     let playerSelection;
     let computerSelection;
@@ -99,6 +117,9 @@ function handleClick(selection){
     }
 }
 
+/* 
+* resets game board
+*/
 function reset(){
     buttonBox.style.display = 'flex';
     resultsDisplay.innerHTML = 'ROCK PAPAR SCISSORS'
@@ -107,6 +128,4 @@ function reset(){
     pScore.innerHTML = playerScore;
     cScore.innerHTML = computerScore;
     resetBox.style.display = 'none';
-
-
 }
