@@ -65,15 +65,39 @@
 }
 #rockBtn{
     font-size: 25px;
+    padding: .5em;
+    border-radius: 18px;
     
 }
 #paperBtn{
     font-size: 25px;
+    padding: .5em;
+    border-radius: 18px;
     
 }
 #scissorsBtn{
     font-size: 25px;
+    padding: .5em;
+    border-radius: 18px;
     
+}
+#scissorsBtn:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+
+}
+#paperBtn:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+
+}
+#rockBtn:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+
 }
 .reset{
     display: flex;
@@ -82,5 +106,12 @@
 }
 #resetBtn{
     font-size: 25px;
-    
+    padding: 1em;
+    border-radius: 18px;
+}
+
+#resetBtn:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
 }
