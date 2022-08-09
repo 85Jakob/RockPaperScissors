@@ -84,16 +84,20 @@ function getRandomChoice() {
 function compChoice(){
     let computerSelection;
     let choice = getRandomChoice();
+    let compDisplay;
     if(choice === 0){
         computerSelection = "ROCK";
+        compDisplay = "✊"
     }
     else if(choice === 1){
         computerSelection = "PAPER";
+        compDisplay = "✋"
     }
     else{
         computerSelection = "SCISSORS";
+        compDisplay = "✌️"
     }
-    displayCompPick.innerHTML = computerSelection;
+    displayCompPick.innerHTML = compDisplay;
     return computerSelection;
 }
 
@@ -106,10 +110,22 @@ function compChoice(){
 function handleClick(selection){
     let playerSelection;
     let computerSelection;
+    let playerDisplay;
 
     if(playerScore < maxScore && computerScore < maxScore){
         playerSelection = selection;
-        displayPlayerPick.innerHTML = selection;
+        switch(selection){
+            case "ROCK":
+                playerDisplay = "✊";   
+                break;
+            case "PAPER":
+                playerDisplay = "✋"   
+                break;
+            case "SCISSORS":
+                playerDisplay = "✌️"   
+                break;
+        }
+        displayPlayerPick.innerHTML = playerDisplay;
         current = false;
         computerSelection = compChoice();
         
