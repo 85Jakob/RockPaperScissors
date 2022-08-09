@@ -56,12 +56,12 @@ function playRound(playerSelection, computerSelection){
     cScore.innerHTML = computerScore;
 
     if (playerScore === 5){
-        resultsDisplay.innerHTML = 'CONGRATS YOU BEAT THE MACHINE, YOU WIN!!';
+        resultsDisplay.innerHTML = 'CONGRATS YOU BEAT THE COMPUTER, YOU WIN!!';
         buttonBox.style.display = 'none';
         resetBox.style.display = 'flex';
     }
     else if(computerScore === 5){
-        resultsDisplay.innerHTML = 'YOU LOSE, THE MACHINE HAS WON!! :(';
+        resultsDisplay.innerHTML = 'YOU LOSE, THE COMPUTER HAS WON!! :(';
         buttonBox.style.display = 'none';
         resetBox.style.display = 'flex';
     }
