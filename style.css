@@ -1,5 +1,5 @@
 * {
-    border: 2px solid red;
+
   }
 
 .body{
@@ -12,7 +12,6 @@
     text-align: center;
 }
 .display{
-    border: 3px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,9 +29,12 @@
     display: inline;
 }
 .compPick {
+    margin-top: 5px;
+    font-size: 50px;
     text-align: center;
     display: block;
     height: 30px;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.4));
 }
 
 .playerBox{
@@ -40,7 +42,6 @@
     text-align: center;
     display: block;
     margin-right: 20px;
-    border: 3px solid green;
 }
 .player{
     display: inline;
@@ -49,12 +50,14 @@
     display: inline;
 }
 .playerPick {
+    margin-top: 5px;
+    font-size: 50px;
     text-align: center;
     display: block;
     height: 30px;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.4));
 }
 .buttons{
-    border: 3px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +76,6 @@
     
 }
 .reset{
-    border: 3px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
